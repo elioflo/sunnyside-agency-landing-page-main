@@ -1,0 +1,10 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
+    margin-top: 5rem;
+    &__logo {
+        width: fit-content;
+    }
+}

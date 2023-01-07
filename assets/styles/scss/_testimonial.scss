@@ -1,0 +1,29 @@
+.testimonial {
+    padding: 3rem 1.6rem 0 1.6rem;
+    &__avatar {
+        width: 75px;
+        border-radius: 100%;
+    }
+
+    &__text {
+        font-family: 'Barlow', sans-serif;
+        color: var(--neutral-very-dark-grayish-blue);
+        line-height: 1.6rem;
+        margin-bottom: 2rem;
+        margin-top: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    &__name {
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        font-size: 1.1rem;
+        color: var(--neutral-very-dark-desaturated-blue);
+    }
+
+    &__rol {
+        font-family: 'Barlow', sans-serif;
+        color: var(--neutral-grayish-blue);
+        font-size: .9rem;
+    }
+}

@@ -1,0 +1,34 @@
+.header {
+  position: relative;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-size: 2.3rem;
+    font-weight: 900;
+    color: var(--neutral-white);
+    letter-spacing: 0.5rem;
+  }
+
+  &__arrow {
+    width: 35px;
+    height: 114px;
+  }
+
+  &__bg {
+    display: block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 1.7rem;
+    height: min-content;
+    width: calc(100% - 3.4rem);
+
+    &__logo {
+        width: unset;
+    }
+    &__btn {
+        background-color: transparent;
+        border: none;
+    }
+}

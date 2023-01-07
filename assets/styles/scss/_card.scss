@@ -1,0 +1,59 @@
+.card {
+    text-align: center;
+    padding-bottom: 3rem;
+
+    &--bg {
+        position: relative;
+        padding-bottom: 0;
+        
+    }
+
+    &__img {
+        &--bg {
+            display: block;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 0;
+    }
+
+    &__title, &__text {
+        padding: 0 1.7rem;
+    }
+
+    &__title {
+        font-family: 'Fraunces', serif;
+        margin-top: 3rem;
+        font-size: 1.9rem;
+        color: var(--neutral-very-dark-desaturated-blue);
+        &--bg {
+            color: var(--primary-dark-blue);
+            font-weight: 900;
+            text-transform: capitalize;
+        }
+    }
+
+    &__text {
+        font-family: 'Barlow', sans-serif;
+        color: var(--neutral-dark-grayish-blue);
+        line-height: 1.6rem;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        &--bg {
+            color: var(--primary-dark-blue);
+            font-size: .9rem;     
+            margin-top: 2rem;
+            margin-bottom: 3rem;       
+        }
+    }
+
+    &__link {
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: var(--neutral-very-dark-desaturated-blue);
+        text-decoration: none;
+    }
+}

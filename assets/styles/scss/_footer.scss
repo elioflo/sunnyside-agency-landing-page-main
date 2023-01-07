@@ -1,0 +1,23 @@
+.footer {
+  background-color: rgba(var(--primary-dark-moderate-cyan-rgb), 0.7);
+  text-align: center;
+  padding: 3rem 0;
+
+  &__logo {
+    width: 150px;
+    color: var(--primary-dark-desaturated-cyan);
+  }
+  
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Barlow', sans-serif;
+    margin: 2rem 0;
+  }
+
+  &__link {
+    color: rgba(var(--primary-dark-desaturated-cyan-rgb),.7);
+    text-decoration: none;
+    font-size: .9rem;
+  }
+}
