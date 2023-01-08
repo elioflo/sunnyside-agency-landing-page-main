@@ -5,6 +5,9 @@
     gap: 1.5rem;
     margin-top: 5rem;
     &__logo {
-        width: fit-content;
+        color: #2C7566;
+        &:hover {
+            color: var(--neutral-white);
+        }
     }
 }

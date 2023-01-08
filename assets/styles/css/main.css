@@ -322,10 +322,7 @@ template {
   --neutral-dark-grayish-blue: hsl(232, 10%, 55%);
   --neutral-grayish-blue: hsl(210, 4%, 67%);
   --neutral-white: hsl(0, 0%, 100%);
-}
-
-img {
-  width: 100%;
+  --underline-offset: -.5em;
 }
 
 .header {
@@ -362,9 +359,9 @@ img {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 2.5rem 1.7rem;
-  height: min-content;
-  width: calc(100% - 3.4rem);
+  padding: 2.5rem 0;
+  width: calc(100% - 3.4em);
+  position: relative;
 }
 .nav__logo {
   width: unset;
@@ -372,6 +369,50 @@ img {
 .nav__btn {
   background-color: transparent;
   border: none;
+  padding: 0;
+}
+.nav__menu {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.8em;
+  width: 100%;
+  top: 7em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--neutral-white);
+  padding: 2.8em 0;
+}
+.nav__menu--clicked {
+  display: flex;
+}
+.nav__menu::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 1.7em solid var(--neutral-white);
+  border-left: 1.7em solid transparent;
+  border-right: 0 solid transparent;
+  border-top: 0 solid transparent;
+  top: -1.7em;
+  right: 0;
+}
+.nav__link {
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.2em;
+  color: var(--neutral-dark-grayish-blue);
+}
+.nav__link:last-of-type {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: "Fraunces", serif;
+  color: var(--neutral-very-dark-desaturated-blue);
+  background-color: var(--primary-yellow);
+  padding: 1.2em 1.6em;
+  border-radius: 2em;
 }
 
 .card {
@@ -381,6 +422,9 @@ img {
 .card--bg {
   position: relative;
   padding-bottom: 0;
+}
+.card__img {
+  width: 100%;
 }
 .card__img--bg {
   display: block;
@@ -422,6 +466,12 @@ img {
   font-weight: 900;
   color: var(--neutral-very-dark-desaturated-blue);
   text-decoration: none;
+}
+.card__link--red:hover {
+  text-decoration: underline var(--primary-soft-red) solid 0.5em;
+}
+.card__link--yellow:hover {
+  text-decoration: underline var(--primary-yellow) solid 0.5em;
 }
 
 .testimonials {
@@ -469,6 +519,9 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.gallery__img {
+  width: 100%;
+}
 
 .footer {
   background-color: rgba(var(--primary-dark-moderate-cyan-rgb), 0.7);
@@ -490,6 +543,9 @@ img {
   text-decoration: none;
   font-size: 0.9rem;
 }
+.footer__link:hover {
+  color: var(--neutral-white);
+}
 
 .links {
   display: flex;
@@ -504,7 +560,10 @@ img {
   margin-top: 5rem;
 }
 .contact__logo {
-  width: fit-content;
+  color: #2C7566;
+}
+.contact__logo:hover {
+  color: var(--neutral-white);
 }
 
 /*# sourceMappingURL=main.css.map */

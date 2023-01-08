@@ -9,6 +9,7 @@
     }
 
     &__img {
+        width: 100%;
         &--bg {
             display: block;
         }
@@ -55,5 +56,15 @@
         font-weight: 900;
         color: var(--neutral-very-dark-desaturated-blue);
         text-decoration: none;
+
+        &--red:hover {
+            text-decoration: underline var(--primary-soft-red) solid .5em;
+        }
+
+        &--yellow:hover {
+            text-decoration: underline var(--primary-yellow) solid .5em;
+            
+        }
+
     }
 }
